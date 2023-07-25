@@ -1,0 +1,41 @@
+In JavaScript, the `return` keyword is used to end the execution of a function and specifies the value to be returned from that function. When a function is invoked, it executes the code within its body, and when the `return` statement is encountered, the function immediately stops its execution and returns the specified value back to the caller.
+
+Here's the basic syntax of a function with a `return` statement:
+
+```javascript
+function functionName(parameters) {
+  // Function body
+  // ...
+  return value; // Optional return statement with a value to be returned
+}
+```
+
+Let's break down the key points about the `return` statement:
+
+1. **Function Execution:**
+When a function is called or invoked, its code block is executed. The function may perform operations, calculations, or modify variables within its scope.
+
+2. **Return Statement:**
+The `return` statement, when encountered, halts the function's execution immediately, regardless of where it is placed within the function body. After encountering the `return` statement, the function exits, and no further code within the function will be executed.
+
+3. **Returned Value:**
+The `return` statement can include an expression or value, which is the result that the function will return to the caller. This value can be of any data type, such as numbers, strings, objects, arrays, etc.
+
+4. **Function Call Result:**
+When a function is called, the value returned by the `return` statement becomes the result of the function call. The calling code can then use this value or assign it to a variable, depending on the needs of the program.
+
+Example:
+
+```javascript
+function addNumbers(a, b) {
+  const sum = a + b;
+  return sum; // The value of 'sum' will be returned when this function is called.
+}
+
+const result = addNumbers(5, 3);
+console.log(result); // Output: 8
+```
+
+In this example, the `addNumbers` function takes two parameters, `a` and `b`, and returns their sum using the `return` statement. When the function is called with arguments `5` and `3`, it computes the sum (8) and returns it. The returned value is then stored in the variable `result`, and we log it to the console.
+
+The `return` statement is a crucial part of functions, allowing them to provide meaningful results and share data back with the calling code. It is essential to use `return` statements appropriately and ensure that functions return the expected values and data types for their intended purpose.

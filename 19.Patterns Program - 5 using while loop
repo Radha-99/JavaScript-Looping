@@ -1,0 +1,52 @@
+Print the following pattern using while loop
+
+
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+*
+
+**
+
+***
+
+****
+
+*****
+
+function print_pattern(){
+     /* Function to print the pattern */
+     
+     var n = 5; // Define the number of rows
+
+// Print the top half of the pattern
+for (var i = n; i >= 1; i--) {
+  var row = '';
+  for (var j = 1; j <= i; j++) {
+    row += '*';
+  }
+  console.log(row);
+}
+
+// Print the bottom half of the pattern
+for (var i = 1; i <= n; i++) {
+  var row = '';
+  for (var j = 1; j <= i; j++) {
+    row += '*';
+  }
+  console.log(row);
+}
+
+
+    
+    
+    
+}

@@ -1,0 +1,65 @@
+Certainly! The `break` and `continue` statements are control flow keywords used within loops in JavaScript. They help control the flow of execution and allow you to modify the behavior of loops based on specific conditions. Let's explore each of these concepts in detail:
+
+1. **Break Statement:**
+The `break` statement is used to prematurely exit or "break out" of a loop. When encountered, the `break` statement immediately terminates the loop's execution, and the control flow continues with the statement following the loop.
+
+The `break` statement is commonly used to stop a loop early if a certain condition is met, or when you want to exit a loop based on a particular value or event. It is frequently used in conjunction with conditional statements to perform selective loop termination.
+
+Example - Using `break` in a for loop:
+
+```javascript
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break; // Exit the loop when i is equal to 5
+  }
+  console.log(i);
+}
+// Output: 0, 1, 2, 3, 4
+```
+
+Example - Using `break` in a while loop:
+
+```javascript
+let i = 0;
+while (i < 10) {
+  if (i === 5) {
+    break; // Exit the loop when i is equal to 5
+  }
+  console.log(i);
+  i++;
+}
+// Output: 0, 1, 2, 3, 4
+```
+
+2. **Continue Statement:**
+The `continue` statement is used to skip the rest of the current iteration within a loop and proceed to the next iteration. When encountered, the `continue` statement jumps to the loop's next iteration, bypassing any remaining code within the loop for the current iteration.
+
+The `continue` statement is helpful when you want to skip processing certain elements or conditions in a loop without terminating the entire loop. It allows you to selectively skip iterations based on specific criteria.
+
+Example - Using `continue` in a for loop:
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue; // Skip the iteration when i is equal to 2
+  }
+  console.log(i);
+}
+// Output: 0, 1, 3, 4
+```
+
+Example - Using `continue` in a while loop:
+
+```javascript
+let i = 0;
+while (i < 5) {
+  i++;
+  if (i === 2) {
+    continue; // Skip the iteration when i is equal to 2
+  }
+  console.log(i);
+}
+// Output: 1, 3, 4, 5
+```
+
+Both `break` and `continue` statements can be used with any type of loop (`for`, `while`, `do-while`, and `for...of`), and they are powerful tools for controlling the loop's flow and handling specific cases within the loop's execution. Be careful when using these statements to avoid unintended behaviors and make sure they are placed within appropriate conditions to achieve the desired loop control.

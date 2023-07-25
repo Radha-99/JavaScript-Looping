@@ -1,0 +1,61 @@
+Write a program to print whether a given number is an Armstrong number or not..
+
+(Armstrong number is a number in which all the sum of cubes of digits is equal to the number
+
+Example:-
+
+Input
+
+n=153
+
+Output
+
+true
+
+
+Logic - 153 is an Armstrong number because 1^3 + 5^3 + 3^3 = 1 +125 + 27 = 153 which is equal to the original number )
+
+Input
+
+123
+
+Output
+
+false
+
+Logic - 123 is not an Armstrong number because 1^3 + 2^3 + 3^3 = 1 + 8 + 27 = 36 which is not equal to the original number )
+
+
+function check_armstrong(n){
+     /*Function to check whether a number is an armstrong number or not
+        Print true if yes else false */
+    
+    
+var temp = n;
+var numDigits = 0;
+var sum = 0;
+
+while (temp > 0) {
+  numDigits++;
+  temp = Math.floor(temp / 10);
+}
+
+temp = n;
+
+while (temp > 0) {
+  var digit = temp % 10;
+  var digitPower = 1;
+
+  for (var i = 0; i < numDigits; i++) {
+    digitPower *= digit;
+  }
+
+  sum += digitPower;
+  temp = Math.floor(temp / 10);
+}
+
+var isArmstrong = n === sum;
+console.log(isArmstrong);
+
+    
+}

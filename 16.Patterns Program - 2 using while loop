@@ -1,0 +1,33 @@
+Print the following pattern using while loops
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+function print_pattern(){
+     /* Function to print the pattern */
+
+    var n = 5; // Define the number of rows
+var i = n;
+
+while (i >= 1) {
+  var row = '';
+  var j = 1;
+  while (j <= i) {
+    row += '*';
+    j++;
+  }
+  console.log(row);
+  i--;
+}
+
+
+    
+    
+}

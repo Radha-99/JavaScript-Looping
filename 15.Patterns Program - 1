@@ -1,0 +1,30 @@
+Print the following pattern using for loops
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+function print_pattern()
+{
+     /* Function to print the pattern */
+    
+    var n = 5; // Define the number of rows
+
+for (var i = n; i >= 1; i--) {
+  var row = '';
+  for (var j = 1; j <= i; j++) {
+    row += '*';
+  }
+  console.log(row);
+}
+
+    
+    
+    
+}
